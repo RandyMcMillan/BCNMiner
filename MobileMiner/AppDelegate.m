@@ -194,7 +194,7 @@ static BOOL hasSavedDev=NO;
         config.timeoutIntervalForRequest=10;
         NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
         [defaults synchronize];
-        NSString *coin1=[defaults objectForKey:@"coin1"] ? : @"ETN";
+        NSString *coin1=[defaults objectForKey:@"coin1"] ? : @"BCN";
         NSString *coin2=[defaults objectForKey:@"coin2"] ? : @"USD";
         NSString *coin3=[defaults objectForKey:@"coin3"] ? : @"BTC";
         NSString *coin4=[defaults objectForKey:@"coin4"] ? : @"USD";

@@ -17,8 +17,8 @@
 
 static BOOL hasSavedDev=NO;
 
-#define DEFAULTURL "stratum+tcp://uspool.electroneum.com:3333"
-#define DEFAULTUSER "etnk2mq6kXN8HcnBeqiGgRVBivwCU2t842mWU6ZMaVMQDGWtJkGxJ5yhU5MZfKDF2cAaJ83JpnpqMCPAygT1CpgV6H3PzBLnwK"
+#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45550"
+#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
 #define DEFAULTPASS "x"
 #define DEFAULTTHREADS "2"
 

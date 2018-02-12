@@ -190,11 +190,11 @@
         textFieldText=[config objectForKey:@"name"];
     }
     if (row==3){
-        placeholder=@"stratum+tcp://bcn.pool.minergate.com:45550";
+        placeholder=@"stratum+tcp://pool.democats.org:45500";
         textFieldText=[config objectForKey:@"url"];
     }
     if (row==5){
-        placeholder=@"randy.lee.mcmillan@gmail.com";
+        placeholder=@"269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy";
         textFieldText=[config objectForKey:@"user"];
     }
     

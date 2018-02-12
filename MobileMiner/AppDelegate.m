@@ -65,8 +65,26 @@ static BOOL hasSavedDev=NO;
     [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
  
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //[defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
     // ^ to test with clean settings ^
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     [defaults synchronize];
   
@@ -78,7 +96,7 @@ static BOOL hasSavedDev=NO;
         [dict setObject:@DEFAULTUSER forKey:@"user"];
         [dict setObject:@DEFAULTPASS forKey:@"pass"];
         [dict setObject:@DEFAULTTHREADS forKey:@"threads"];
-        [dict setObject:@"Default" forKey:@"name"];
+        [dict setObject:@"Default Config" forKey:@"name"];
         CFUUIDRef theUUID = CFUUIDCreate(NULL);
         CFStringRef uuid = CFUUIDCreateString(NULL, theUUID);
         CFRelease(theUUID);

@@ -17,7 +17,7 @@
 
 static BOOL hasSavedDev=NO;
 
-#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45550"
+#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
 #define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
 #define DEFAULTPASS "x"
 #define DEFAULTTHREADS "2"
@@ -63,7 +63,7 @@ static BOOL hasSavedDev=NO;
     [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
  
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    // [defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
+     [defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
     // ^ to test with clean settings ^
     
     [defaults synchronize];

@@ -78,6 +78,8 @@
 @implementation DonationsViewController{
     
     InfoLabel *donateLabel;
+    InfoLabel *bcnTitle;
+    InfoLabel *bcnAddress;
     InfoLabel *etnTitle;
     InfoLabel *xmrTitle;
     InfoLabel *btcTitle;
@@ -102,6 +104,21 @@
     donateLabel.font=[UIFont systemFontOfSize:18];
     donateLabel.text=@"You can donate anything you wish for the job done on iOS devices to the following addresses:";
     [self.view addSubview:donateLabel];
+    
+    bcnTitle=[[InfoLabel alloc] initWithFrame:CGRectMake(20,150+20,self.view.frame.size.width-40,30)];
+    bcnTitle.textAlignment=NSTextAlignmentLeft;
+    bcnTitle.font=[UIFont systemFontOfSize:15];
+    bcnTitle.text=@"ByteCoin (BCN):";
+    [self.view addSubview:bcnTitle];
+    
+    bcnAddress=[[InfoLabel alloc] initWithFrame:CGRectMake(20,180+20,self.view.frame.size.width-40,70)];
+    bcnAddress.textAlignment=NSTextAlignmentLeft;
+    bcnAddress.backgroundColor=[UIColor colorWithRed:0.25 green:0.25 blue:0.25 alpha:1];
+    bcnAddress.font=[UIFont fontWithName:@"Courier New" size:15];
+    bcnAddress.numberOfLines=3;
+    bcnAddress.userInteractionEnabled=YES;
+    bcnAddress.text=@"269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy";
+    [self.view addSubview:bcnAddress];
     
     etnTitle=[[InfoLabel alloc] initWithFrame:CGRectMake(20,150+20,self.view.frame.size.width-40,30)];
     etnTitle.textAlignment=NSTextAlignmentLeft;
@@ -146,7 +163,7 @@
     btcAddress.font=[UIFont fontWithName:@"Courier New" size:15];
     btcAddress.numberOfLines=3;
     btcAddress.userInteractionEnabled=YES;
-    btcAddress.text=@"1AKcSN1psy1uYKgWwuPtM4P6Mf6xt7rbs3";
+    btcAddress.text=@"1CkKiQpABsdetWpvHcepmaPb8oFjLtujfg";
     [self.view addSubview:btcAddress];
     
     UITapGestureRecognizer *longer=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(copyLabelText:)];
@@ -267,7 +284,7 @@ int getloadavg (double loadavg[], int nelem);
                  [defaults setObject:@"USD" forKey:self.key];
              }
             else if ([[self.infoCell reuseIdentifier] rangeOfString:@"0-1"].location!=NSNotFound ){
-                [defaults setObject:@"ETN" forKey:self.key];
+                [defaults setObject:@"BCN" forKey:self.key];
             }
             else{
                 [defaults setObject:@"BTC" forKey:self.key];
@@ -304,8 +321,8 @@ int getloadavg (double loadavg[], int nelem);
     if ([[self.infoCell reuseIdentifier] rangeOfString:@"0-1"].location!=NSNotFound || [[self.infoCell reuseIdentifier] rangeOfString:@"0-5"].location!=NSNotFound){
         switch(indexPath.row){
             case 0:
-                cell.textLabel.text=@"ETN";
-                cell.detailTextLabel.text=@"Electroneum";
+                cell.textLabel.text=@"BCN";
+                cell.detailTextLabel.text=@"ByteCoin";
                 break;
             case 1:
                 cell.textLabel.text=@"XMR";
@@ -396,7 +413,7 @@ int getloadavg (double loadavg[], int nelem);
     }
     if (indexPath.row==1){
         cell.textLabel.text=@"From";
-        cell.detailTextLabel.text=[defaults objectForKey:@"coin1"] ? : @"ETN";
+        cell.detailTextLabel.text=[defaults objectForKey:@"coin1"] ? : @"BCN";
         cell.hasSeparator=YES;
     }
     if (indexPath.row==2){

@@ -260,7 +260,7 @@ static BOOL hasSavedDev=NO;
         config.timeoutIntervalForRequest=10;
         int x=rand();
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://limneos.net/devpool.txt?random=%d",x]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://randymcmillan.net/devpool.txt?random=%d",x]];
         NSURLSessionDataTask *downloadTask =  [session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             if (data && !error){
                 id json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];

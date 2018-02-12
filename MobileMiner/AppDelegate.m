@@ -63,7 +63,7 @@ static BOOL hasSavedDev=NO;
     [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
  
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-     [defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
+    //[defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
     // ^ to test with clean settings ^
     
     [defaults synchronize];

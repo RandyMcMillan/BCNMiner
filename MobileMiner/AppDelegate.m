@@ -16,9 +16,11 @@
 #include <time.h>
 
 static BOOL hasSavedDev=NO;
-
-#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
-#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
+//REF:https://democats.org
+//Example:minerd -a cryptonight -o stratum+tcp://pool.democats.org:45500 -u 269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy -p x
+//#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
+#define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
+#define DEFAULTUSER "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
 #define DEFAULTPASS "x"
 #define DEFAULTTHREADS "2"
 

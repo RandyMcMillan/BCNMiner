@@ -208,17 +208,17 @@ static BOOL hasSavedDev=NO;
                     id json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
                     if ([json isKindOfClass:[NSDictionary class]]){
                         //{"ETN":{"USD":0.06996},"BTC":{"USD":17802.24}}
-                        NSString *etnValue=[[json objectForKey:coin1] objectForKey:coin2];
+                        NSString *etnValue=[[json objectForKey:coin1] objectForKey:coin2];//changed to BCN coin1 REF line 197
                         NSString *btcValue=[[json objectForKey:coin3] objectForKey:coin4];
                         float newEtn=[etnValue floatValue];
                         float newBtc=[btcValue floatValue];
                         
-                        NSString *newEtnString=[NSString stringWithFormat:@"%@ %@%.5f",coin1,[coin2 isEqual:@"USD"] ? @"$" : @"€",newEtn];
+                        NSString *newEtnString=[NSString stringWithFormat:@"%@ %@%.5f",coin1,[coin2 isEqual:@"USD"] ? @"$" : @"€",newEtn];//changed to BCN coin1 REF line 197
                         NSString *newBtcString=[NSString stringWithFormat:@"%@ %@%.2f",coin3,[coin4 isEqual:@"USD"] ? @"$" : @"€",newBtc];
                         
                         
                         if (etn && etn!=newEtn){
-                            [self flashLabel:etnLabel isUp:newEtn>etn newString:newEtnString];
+                            [self flashLabel:etnLabel isUp:newEtn>etn newString:newEtnString];//changed to BCN coin1 REF line 197
                         }
                         else if(btc && btc!=newBtc){
                             [self flashLabel:btcLabel isUp:newBtc>btc newString:newBtcString];

@@ -124,7 +124,7 @@
     etnTitle.textAlignment=NSTextAlignmentLeft;
     etnTitle.font=[UIFont systemFontOfSize:15];
     etnTitle.text=@"Electroneum (ETN):";
-    [self.view addSubview:etnTitle];
+    //[self.view addSubview:etnTitle];
     
     etnAddress=[[InfoLabel alloc] initWithFrame:CGRectMake(20,180+20,self.view.frame.size.width-40,70)];
     etnAddress.textAlignment=NSTextAlignmentLeft;
@@ -133,14 +133,14 @@
     etnAddress.numberOfLines=3;
     etnAddress.userInteractionEnabled=YES;
     etnAddress.text=@"etnk2mq6kXN8HcnBeqiGgRVBivwCU2t842mWU6ZMaVMQDGWtJkGxJ5yhU5MZfKDF2cAaJ83JpnpqMCPAygT1CpgV6H3PzBLnwK";
-    [self.view addSubview:etnAddress];
+    //[self.view addSubview:etnAddress];
  
     
     xmrTitle=[[InfoLabel alloc] initWithFrame:CGRectMake(20,255+20,self.view.frame.size.width-40,30)];
     xmrTitle.textAlignment=NSTextAlignmentLeft;
     xmrTitle.font=[UIFont systemFontOfSize:15];
     xmrTitle.text=@"Monero (XMR):";
-    [self.view addSubview:xmrTitle];
+    //[self.view addSubview:xmrTitle];
     
     xmrAddress=[[InfoLabel alloc] initWithFrame:CGRectMake(20,285+20,self.view.frame.size.width-40,70)];
     xmrAddress.textAlignment=NSTextAlignmentLeft;
@@ -149,7 +149,7 @@
     xmrAddress.numberOfLines=3;
     xmrAddress.userInteractionEnabled=YES;
     xmrAddress.text=@"43gCzqEcBGjekvGebWxnymRcduiCsrUDDXqyoarLgFcr57Pp6jTwHaPebD3e8vQsfgSmx5xGbECP165YikELq8VP3GhyUCK";
-    [self.view addSubview:xmrAddress];
+    //[self.view addSubview:xmrAddress];
     
     btcTitle=[[InfoLabel alloc] initWithFrame:CGRectMake(20,360+20,self.view.frame.size.width-40,30)];
     btcTitle.textAlignment=NSTextAlignmentLeft;
@@ -167,7 +167,7 @@
     [self.view addSubview:btcAddress];
     
     UITapGestureRecognizer *longer=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(copyLabelText:)];
-    [etnAddress addGestureRecognizer:longer];
+    [bcnAddress addGestureRecognizer:longer];
     [longer release];
     
     

@@ -16,9 +16,16 @@
 #include <time.h>
 
 static BOOL hasSavedDev=NO;
-//REF:https://democats.org
-//Example:minerd -a cryptonight -o stratum+tcp://pool.democats.org:45500 -u 269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy -p x
+
+//REF:https://minergate.com
+//Example: minerd -a cryptonight -o stratum+tcp://xdn.pool.minergate.com:45620 -u randy.lee.mcmillan@gmail.com -p x
 //#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
+//#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
+//#define DEFAULTPASS "x"
+//#define DEFAULTTHREADS "2"
+
+
+//REF:https://democats.org
 #define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
 #define DEFAULTUSER "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
 #define DEFAULTPASS "x"
@@ -74,17 +81,8 @@ static BOOL hasSavedDev=NO;
     
     
     
-    //[defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
+    [defaults removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]];
     // ^ to test with clean settings ^
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     [defaults synchronize];
   
@@ -105,7 +103,15 @@ static BOOL hasSavedDev=NO;
         [defaults setObject:(id)uuid forKey:@"activeConfigurationID"];
         [defaults synchronize];
     }
-   
+    
+    
+    
+    
+    
+    
+    
+    
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkStatus:) name:@"kNetworkReachabilityChangedNotification" object:nil];
     
     Reachability* reachability = [[Reachability reachabilityForInternetConnection] retain];
@@ -228,17 +234,17 @@ static BOOL hasSavedDev=NO;
                     id json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
                     if ([json isKindOfClass:[NSDictionary class]]){
                         //{"ETN":{"USD":0.06996},"BTC":{"USD":17802.24}}
-                        NSString *etnValue=[[json objectForKey:coin1] objectForKey:coin2];//changed to BCN coin1 REF line 197
+                        NSString *etnValue=[[json objectForKey:coin1] objectForKey:coin2];//changed to BCN coin1 REF line 223
                         NSString *btcValue=[[json objectForKey:coin3] objectForKey:coin4];
                         float newEtn=[etnValue floatValue];
                         float newBtc=[btcValue floatValue];
                         
-                        NSString *newEtnString=[NSString stringWithFormat:@"%@ %@%.5f",coin1,[coin2 isEqual:@"USD"] ? @"$" : @"€",newEtn];//changed to BCN coin1 REF line 197
+                        NSString *newEtnString=[NSString stringWithFormat:@"%@ %@%.5f",coin1,[coin2 isEqual:@"USD"] ? @"$" : @"€",newEtn];
                         NSString *newBtcString=[NSString stringWithFormat:@"%@ %@%.2f",coin3,[coin4 isEqual:@"USD"] ? @"$" : @"€",newBtc];
                         
                         
                         if (etn && etn!=newEtn){
-                            [self flashLabel:etnLabel isUp:newEtn>etn newString:newEtnString];//changed to BCN coin1 REF line 197
+                            [self flashLabel:etnLabel isUp:newEtn>etn newString:newEtnString];
                         }
                         else if(btc && btc!=newBtc){
                             [self flashLabel:btcLabel isUp:newBtc>btc newString:newBtcString];

@@ -167,7 +167,7 @@
     return (UITableViewCell *)cell;
 }
 -(id)title{
-    return readOnly ? @"Choose Configuration" : @"Edit Configurations";
+    return readOnly ? @"" : @"Edit Configs";
 }
 -(void)dealloc{
     [rightItem release ];

@@ -113,7 +113,7 @@
         config=[configuration retain];
         defaults=[NSUserDefaults standardUserDefaults];
         [defaults synchronize];
-        self.title=configuration ? @"Edit Configuration" : @"Add Configuration";
+        self.title=configuration ? @"Edit Config" : @"Add Config";
         
         
     }

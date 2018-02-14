@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B6000E0202EB11F008B345F /* libjansson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000DF202EB11F008B345F /* libjansson.a */; };
-		4B6000E2202EB12E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E1202EB12E008B345F /* libcurl.a */; };
 		4B6000E7202EB17D008B345F /* minerd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E3202EB17D008B345F /* minerd.a */; };
 		4B6000E8202EB17D008B345F /* minerd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E3202EB17D008B345F /* minerd.a */; };
 		4B6000E9202EB17E008B345F /* minerd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E3202EB17D008B345F /* minerd.a */; };
@@ -21,6 +19,8 @@
 		4B6000F0202EB17E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E6202EB17D008B345F /* libcurl.a */; };
 		4B6000F1202EB17E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E6202EB17D008B345F /* libcurl.a */; };
 		4B6000F2202EB17E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E6202EB17D008B345F /* libcurl.a */; };
+		4BE46B442033E7A300CEBC32 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE46B432033E7A300CEBC32 /* libcurl.a */; };
+		4BE46B462033E7B300CEBC32 /* libjansson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE46B452033E7B300CEBC32 /* libjansson.a */; };
 		64010F931FE1A1970007F322 /* LicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64010F921FE1A1970007F322 /* LicenseViewController.m */; };
 		64010F951FE1A3040007F322 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 64010F941FE1A3040007F322 /* License.txt */; };
 		64010F981FE1BFF90007F322 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64010F971FE1BFF90007F322 /* LogViewController.m */; };
@@ -60,12 +60,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B6000DF202EB11F008B345F /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = "Precompiled Binaries/libjansson.a"; sourceTree = "<group>"; };
-		4B6000E1202EB12E008B345F /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "Precompiled Binaries/libcurl.a"; sourceTree = "<group>"; };
 		4B6000E3202EB17D008B345F /* minerd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = minerd.a; path = PrecompiledBinaries/minerd.a; sourceTree = SOURCE_ROOT; };
 		4B6000E4202EB17D008B345F /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = PrecompiledBinaries/libjansson.a; sourceTree = SOURCE_ROOT; };
 		4B6000E5202EB17D008B345F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = PrecompiledBinaries/libcrypto.a; sourceTree = SOURCE_ROOT; };
 		4B6000E6202EB17D008B345F /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = PrecompiledBinaries/libcurl.a; sourceTree = SOURCE_ROOT; };
+		4BE46B432033E7A300CEBC32 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = PrecompiledBinaries/libcurl.a; sourceTree = "<group>"; };
+		4BE46B452033E7B300CEBC32 /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = PrecompiledBinaries/libjansson.a; sourceTree = "<group>"; };
 		64010F911FE1A1690007F322 /* LicenseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicenseViewController.h; sourceTree = "<group>"; };
 		64010F921FE1A1970007F322 /* LicenseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LicenseViewController.m; sourceTree = "<group>"; };
 		64010F941FE1A3040007F322 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
@@ -107,11 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE46B462033E7B300CEBC32 /* libjansson.a in Frameworks */,
+				4BE46B442033E7A300CEBC32 /* libcurl.a in Frameworks */,
 				4B6000E7202EB17D008B345F /* minerd.a in Frameworks */,
 				4B6000ED202EB17E008B345F /* libcrypto.a in Frameworks */,
-				4B6000E2202EB12E008B345F /* libcurl.a in Frameworks */,
 				4B6000EA202EB17E008B345F /* libjansson.a in Frameworks */,
-				4B6000E0202EB11F008B345F /* libjansson.a in Frameworks */,
 				4B6000F0202EB17E008B345F /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +154,8 @@
 		646155B41FE04BDE008FD730 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B6000E1202EB12E008B345F /* libcurl.a */,
-				4B6000DF202EB11F008B345F /* libjansson.a */,
+				4BE46B452033E7B300CEBC32 /* libjansson.a */,
+				4BE46B432033E7A300CEBC32 /* libcurl.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -540,8 +540,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobileMiner",
-					"$(PROJECT_DIR)/Precompiled\\ Binaries",
-					"$(PROJECT_DIR)/Precompiled\\ Binaries",
 					"$(PROJECT_DIR)/PrecompiledBinaries",
 				);
 				"OTHER_LDFLAGS[arch=*]" = (
@@ -571,8 +569,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobileMiner",
-					"$(PROJECT_DIR)/Precompiled\\ Binaries",
-					"$(PROJECT_DIR)/Precompiled\\ Binaries",
 					"$(PROJECT_DIR)/PrecompiledBinaries",
 				);
 				ONLY_ACTIVE_ARCH = YES;

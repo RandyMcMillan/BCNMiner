@@ -539,14 +539,14 @@ int getloadavg (double loadavg[], int nelem);
     CustomCell *cell=(CustomCell *)[super tableView:tableView cellForRowAtIndexPath:indexPath];
     
     if (indexPath.row==0){
-        cell.textLabel.text=@"Active Configuration";
+        cell.textLabel.text=@"Active Config";
         cell.detailTextLabel.text=[self activeConfigurationName] ?: @"!Not found!";
         cell.hasSeparator=YES;
     }
     
     else if (indexPath.row==1){
-        cell.textLabel.text=@"Edit Configurations";
-        cell.detailTextLabel.text= [self configurationsCount] == 1 ? @"1 Configuration"  : [NSString stringWithFormat: @"%lu Configurations", [self configurationsCount] ];
+        cell.textLabel.text=@"Edit Config";
+        cell.detailTextLabel.text= [self configurationsCount] == 1 ? @"1 Configuration"  : [NSString stringWithFormat: @"%lu Config2", [self configurationsCount] ];
         cell.hasSeparator=YES;
     }
     else if (indexPath.row==2 || indexPath.row==5 || indexPath.row==7 ) {
@@ -914,7 +914,7 @@ int getloadavg (double loadavg[], int nelem);
         confLabel.font=[UIFont boldSystemFontOfSize:17];
         confLabel.textColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
         confLabel.textAlignment=NSTextAlignmentCenter;
-        confLabel.text=@"Active Mining Configuration:";
+        confLabel.text=@"Active Mining Config:";
        
         nameLabel=[[InfoLabel alloc] initWithFrame:CGRectMake(20,0,80,30)];
         nameLabel.font=[UIFont boldSystemFontOfSize:15];

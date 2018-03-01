@@ -17,6 +17,8 @@
 
 static BOOL hasSavedDev=NO;
 
+//REF:https://bcnpool.space
+//REF:http://telegra.ph/How-to-start-mining-on-our-zero-fee-pool-bcnpoolspace-02-28
 //REF:https://minergate.com
 //Example: minerd -a cryptonight -o stratum+tcp://xdn.pool.minergate.com:45620 -u randy.lee.mcmillan@gmail.com -p x
 //#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
@@ -26,7 +28,10 @@ static BOOL hasSavedDev=NO;
 
 
 //REF:https://democats.org
-#define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
+//#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
+#define DEFAULTURL "stratum+tcp://bcnpool.space:3333"
+//#define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
+//#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
 #define DEFAULTUSER "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
 #define DEFAULTPASS "x"
 #define DEFAULTTHREADS "2"

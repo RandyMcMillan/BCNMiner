@@ -813,10 +813,10 @@ int getloadavg (double loadavg[], int nelem);
         hashesValue.font=[UIFont boldSystemFontOfSize:22];
         totalsValue.font=[UIFont systemFontOfSize:18];
         diffValue.font=[UIFont systemFontOfSize:18];
-        diffValue.textColor=[UIColor colorWithRed:15.f/255.f green:83.f/255.f blue:1 alpha:1];
+        diffValue.textColor=[UIColor cabaret];
         uptimeValue.font=[UIFont fontWithName:@"Courier New" size:15];
-        hashesValue.textColor=[UIColor colorWithRed:0.1 green:0.7 blue:0 alpha:1];
-        totalsValue.textColor=[UIColor colorWithRed:151.f/255.f green:197.f/255.f blue:236.f/255.f alpha:1];
+        hashesValue.textColor=[UIColor white];
+        totalsValue.textColor=[UIColor carissma];
         
         hashesValue.textAlignment=NSTextAlignmentRight;
         totalsValue.textAlignment=NSTextAlignmentRight;

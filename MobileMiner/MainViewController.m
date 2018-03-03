@@ -221,14 +221,14 @@
         [pb setString:((UILabel *)sender.view).text];
         if (!copied){
             copied=[[UIView alloc] initWithFrame:CGRectMake(0,-60,self.view.frame.size.width,60)];
-            copied.backgroundColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+            copied.backgroundColor=[UIColor cabaret];
             copied.layer.cornerRadius=15;
             copied.layer.masksToBounds=YES;
             label=[[UILabel alloc] initWithFrame:CGRectMake(0,10,self.view.frame.size.width,40)];
             label.textAlignment=NSTextAlignmentCenter;
             label.text=@"Copied!";
             label.font=[UIFont boldSystemFontOfSize:27];
-            label.textColor=[UIColor colorWithRed:0.15 green:0.15 blue:0.15 alpha:1];
+            label.textColor=[UIColor white];
             [copied addSubview:label];
         }
         
@@ -683,14 +683,14 @@ int getloadavg (double loadavg[], int nelem);
         [pb setString:((UILabel *)sender.view).text];
         if (!copied){
             copied=[[UIView alloc] initWithFrame:CGRectMake(0,-60,self.view.frame.size.width,60)];
-            copied.backgroundColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+            copied.backgroundColor=[UIColor cabaret];
             copied.layer.cornerRadius=15;
             copied.layer.masksToBounds=YES;
             UILabel *label=[[UILabel alloc] initWithFrame:CGRectMake(0,10,self.view.frame.size.width,40)];
             label.textAlignment=NSTextAlignmentCenter;
             label.text=@"Copied!";
             label.font=[UIFont boldSystemFontOfSize:27];
-            label.textColor=[UIColor colorWithRed:0.15 green:0.15 blue:0.15 alpha:1];
+            label.textColor=[UIColor white];
             [copied addSubview:label];
         }
         
@@ -776,7 +776,7 @@ int getloadavg (double loadavg[], int nelem);
         [mineButton setBackgroundImage:[UIImage imageNamed:@"buttonbg-selected"] forState:(UIControlState)5];
 
         [mineButton setTitleColor:[UIColor white] forState:UIControlStateNormal];
-        [mineButton setTitleColor:[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1] forState:UIControlStateSelected];
+        [mineButton setTitleColor:[UIColor cabaret] forState:UIControlStateSelected];
         [mineButton setTitleColor:[UIColor colorWithRed:1 green:0.8 blue:0 alpha:0.5] forState:(UIControlState)5];
         
         [mineButton setTitleColor:[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.7] forState:UIControlStateDisabled];

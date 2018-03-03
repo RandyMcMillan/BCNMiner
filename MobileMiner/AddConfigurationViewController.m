@@ -243,7 +243,7 @@
         
         cell.textField.placeholder=@"Delete";
         cell.textField.text=@"Delete";
-        cell.contentView.backgroundColor=[UIColor redColor];
+        cell.contentView.backgroundColor=[UIColor cabaret];
         cell.textField.userInteractionEnabled=NO;
         cell.textField.textAlignment=NSTextAlignmentCenter;
         cell.textField.clearButtonMode=UITextFieldViewModeNever;

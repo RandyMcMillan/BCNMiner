@@ -112,7 +112,7 @@ static void stateCallback(CFNotificationCenterRef center, void *observer, CFNoti
     matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
     for (NSTextCheckingResult *match in matches) {
         NSRange matchRange = [match rangeAtIndex:0];
-        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor yellowColor] range:NSMakeRange(matchRange.location,matchRange.length-2)];
+        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor carissma] range:NSMakeRange(matchRange.location,matchRange.length-2)];
     }
     
     
@@ -120,14 +120,14 @@ static void stateCallback(CFNotificationCenterRef center, void *observer, CFNoti
     matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
     for (NSTextCheckingResult *match in matches) {
         NSRange matchRange = [match rangeAtIndex:0];
-        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(matchRange.location,matchRange.length-7)];
+        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor cabaret_3] range:NSMakeRange(matchRange.location,matchRange.length-7)];
     }
     
     regex = [NSRegularExpression regularExpressionWithPattern:@"Accepted:" options:0 error:&error];
     matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
     for (NSTextCheckingResult *match in matches) {
         NSRange matchRange = [match rangeAtIndex:0];
-        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(matchRange.location,matchRange.length-1)];
+        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor cabaret] range:NSMakeRange(matchRange.location,matchRange.length-1)];
     }
     regex = [NSRegularExpression regularExpressionWithPattern:@"Rejected:" options:0 error:&error];
     matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
@@ -140,7 +140,7 @@ static void stateCallback(CFNotificationCenterRef center, void *observer, CFNoti
     matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
     for (NSTextCheckingResult *match in matches) {
         NSRange matchRange = [match rangeAtIndex:0];
-        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.2 green:0.7 blue:1 alpha:1] range:NSMakeRange(matchRange.location,matchRange.length-1)];
+        [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor cabaret] range:NSMakeRange(matchRange.location,matchRange.length-1)];
     }
     
     textView.attributedText = attributedString;

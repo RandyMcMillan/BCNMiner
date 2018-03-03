@@ -7,6 +7,7 @@
 //
 
 #include "AddConfigurationViewController.h"
+#import "UIColor+Colors.h"
 
 @interface EditCell : UITableViewCell
 

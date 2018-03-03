@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #include "LicenseViewController.h"
+#import "UIColor+Colors.h"
 
 @implementation LicenseViewController
 -(id)title{

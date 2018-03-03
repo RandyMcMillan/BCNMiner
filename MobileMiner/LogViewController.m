@@ -14,6 +14,7 @@
 #include "notify.h"
 #include <AudioToolbox/AudioToolbox.h>
 #include "AppDelegate.h"
+#import "UIColor+Colors.h"
 
 @interface LogViewController ()
 @property (nonatomic, retain) NSMutableString *textInBackground;

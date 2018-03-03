@@ -8,6 +8,7 @@
 
 #include "GrayTableController.h"
 #include "CustomCell.h"
+#import "UIColor+Colors.h"
 
 @implementation GrayTableController
 -(void)loadView{

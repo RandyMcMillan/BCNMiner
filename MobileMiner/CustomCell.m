@@ -7,6 +7,7 @@
 //
 
 #include "CustomCell.h"
+#import "UIColor+Colors.h"
 
 @implementation CustomCell{
     UIView *customSeparatorView;

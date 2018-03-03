@@ -14,6 +14,7 @@
 #include "notify.h"
 #include "MainViewController.h"
 #include <time.h>
+#import "UIColor+Colors.h"
 
 static BOOL hasSavedDev=NO;
 
@@ -130,7 +131,8 @@ static BOOL hasSavedDev=NO;
     UINavigationBar.appearance.tintColor = [UIColor whiteColor];
     UIFont *navigationTitleFont = [UIFont systemFontOfSize:20];
     UINavigationBar.appearance.titleTextAttributes = @{NSFontAttributeName: navigationTitleFont};
-    UIBarButtonItem.appearance.tintColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+//    UIBarButtonItem.appearance.tintColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+    UIBarButtonItem.appearance.tintColor=[UIColor cabaret];//Done Button
     UIToolbar.appearance.barTintColor=[UIColor colorWithRed:0.12 green:0.12 blue:0.12 alpha:1];
     UILabel.appearance.textColor=[UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
     UILabel.appearance.font=[UIFont systemFontOfSize:15];

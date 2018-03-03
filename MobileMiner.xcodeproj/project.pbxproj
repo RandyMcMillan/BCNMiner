@@ -19,6 +19,7 @@
 		4B6000F0202EB17E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E6202EB17D008B345F /* libcurl.a */; };
 		4B6000F1202EB17E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E6202EB17D008B345F /* libcurl.a */; };
 		4B6000F2202EB17E008B345F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6000E6202EB17D008B345F /* libcurl.a */; };
+		4BD1D0B2204A5030000ADF8D /* UIColor+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D0B0204A5030000ADF8D /* UIColor+Colors.m */; };
 		4BE46B442033E7A300CEBC32 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE46B432033E7A300CEBC32 /* libcurl.a */; };
 		4BE46B462033E7B300CEBC32 /* libjansson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE46B452033E7B300CEBC32 /* libjansson.a */; };
 		64010F931FE1A1970007F322 /* LicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64010F921FE1A1970007F322 /* LicenseViewController.m */; };
@@ -64,6 +65,8 @@
 		4B6000E4202EB17D008B345F /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = PrecompiledBinaries/libjansson.a; sourceTree = SOURCE_ROOT; };
 		4B6000E5202EB17D008B345F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = PrecompiledBinaries/libcrypto.a; sourceTree = SOURCE_ROOT; };
 		4B6000E6202EB17D008B345F /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = PrecompiledBinaries/libcurl.a; sourceTree = SOURCE_ROOT; };
+		4BD1D0B0204A5030000ADF8D /* UIColor+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colors.m"; sourceTree = "<group>"; };
+		4BD1D0B1204A5030000ADF8D /* UIColor+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colors.h"; sourceTree = "<group>"; };
 		4BE46B432033E7A300CEBC32 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = PrecompiledBinaries/libcurl.a; sourceTree = "<group>"; };
 		4BE46B452033E7B300CEBC32 /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = PrecompiledBinaries/libjansson.a; sourceTree = "<group>"; };
 		64010F911FE1A1690007F322 /* LicenseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicenseViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 		64E163081FDEB137003EEC24 /* MobileMiner */ = {
 			isa = PBXGroup;
 			children = (
+				4BD1D0B1204A5030000ADF8D /* UIColor+Colors.h */,
+				4BD1D0B0204A5030000ADF8D /* UIColor+Colors.m */,
 				64E163121FDEB137003EEC24 /* Assets.xcassets */,
 				64FC35011FEAE0FA00197F5E /* love@2x.png */,
 				645B8B8D1FE3626B00FDE401 /* AddConfigurationViewController.h */,
@@ -358,6 +363,7 @@
 			files = (
 				64010F931FE1A1970007F322 /* LicenseViewController.m in Sources */,
 				64010F981FE1BFF90007F322 /* LogViewController.m in Sources */,
+				4BD1D0B2204A5030000ADF8D /* UIColor+Colors.m in Sources */,
 				645B8B9E1FE4B8EE00FDE401 /* CustomCell.m in Sources */,
 				64E1630E1FDEB137003EEC24 /* ViewController.m in Sources */,
 				64E163191FDEB137003EEC24 /* main.m in Sources */,

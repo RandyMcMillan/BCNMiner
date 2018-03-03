@@ -9,6 +9,7 @@
 #include "ManageConfigurationController.h"
 #include "AddConfigurationViewController.h"
 #include "CustomCell.h"
+#import "UIColor+Colors.h"
 
 @implementation ManageConfigurationController{
     NSUserDefaults *defaults;

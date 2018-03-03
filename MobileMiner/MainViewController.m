@@ -722,7 +722,7 @@ int getloadavg (double loadavg[], int nelem);
     
 }
 -(id)title{
-    return @"MobileMiner";
+    return @"BCN Miner";
 }
 -(void)viewDidLoad{
     [super viewDidLoad];

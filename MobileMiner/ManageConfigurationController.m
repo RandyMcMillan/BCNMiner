@@ -66,7 +66,7 @@
     
     self.navigationItem.rightBarButtonItem=readOnly ? NULL : [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(toggleEdit:)];
     rightItem=self.navigationItem.rightBarButtonItem;
-    self.navigationItem.rightBarButtonItem.tintColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+    self.navigationItem.rightBarButtonItem.tintColor=[UIColor cabaret];
     self.tableView.allowsSelectionDuringEditing=YES;
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
     
@@ -108,7 +108,7 @@
     if (editing){
         if (!leftItem){
             leftItem=[[UIBarButtonItem alloc] initWithTitle:@"Add New" style:UIBarButtonItemStylePlain target:self action:@selector(addConfig:)];
-            leftItem.tintColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+            leftItem.tintColor=[UIColor cabaret];
         }
         self.navigationItem.leftBarButtonItem=leftItem;
     }

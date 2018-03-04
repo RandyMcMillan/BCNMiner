@@ -191,7 +191,7 @@
         textFieldText=[config objectForKey:@"name"];
     }
     if (row==3){
-        placeholder=@"stratum+tcp://pool.democats.org:45500";
+        placeholder=@"stratum+tcp://bcnpool.space:5555";
         textFieldText=[config objectForKey:@"url"];
     }
     if (row==5){
@@ -216,6 +216,7 @@
     if (row==9){
         UIStepper *stepper=[[UIStepper alloc] initWithFrame:CGRectZero];
         [stepper addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventTouchUpInside];
+        stepper.tintColor = [UIColor cabaret];//default blue
         stepper.minimumValue=1;
         stepper.maximumValue=8;
         stepper.stepValue=1;
@@ -261,7 +262,7 @@
     [super viewDidLoad];
     UIBarButtonItem *right=[[UIBarButtonItem alloc] initWithTitle:config ? @"Save" : @"Done" style:UIBarButtonItemStyleDone target:self action:@selector(addConfig:)];
     self.navigationItem.rightBarButtonItem=right;
-    self.navigationItem.rightBarButtonItem.tintColor=[UIColor colorWithRed:1 green:0.8 blue:0 alpha:1];
+    self.navigationItem.rightBarButtonItem.tintColor=[UIColor cabaret];
     [right release];
     self.view.backgroundColor=[UIColor colorWithRed:0.15 green:0.15 blue:0.15 alpha:1];
     [self.tableView setSeparatorColor:[UIColor clearColor]];

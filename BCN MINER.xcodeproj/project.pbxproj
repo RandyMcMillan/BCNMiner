@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "MobileMiner" */;
+			buildConfigurationList = 64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "BCN MINER" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -666,7 +666,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "MobileMiner" */ = {
+		64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "BCN MINER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64E163301FDEB138003EEC24 /* Debug */,

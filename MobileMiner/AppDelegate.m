@@ -32,10 +32,14 @@ static BOOL hasSavedDev=NO;
 //#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
 //#define DEFAULTURL "stratum+tcp://bcnpool.space:3333"//diff 100
 #define DEFAULTURL "stratum+tcp://bcnpool.space:5555"//diff 2000
+
+#define DEFAULTURL2 "stratum+tcp://bcnpool.space:3333"//diff 2000
 //#define DEFAULTURL "stratum+tcp://bcnpool.space:7777"//diff 10000
 //#define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
 //#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
 #define DEFAULTUSER "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
+
+#define DEFAULTUSER2 "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
 #define DEFAULTPASS "x"
 #define DEFAULTTHREADS "2"
 
@@ -100,6 +104,10 @@ static BOOL hasSavedDev=NO;
         NSMutableDictionary *dict=[NSMutableDictionary dictionary];
         [dict setObject:@DEFAULTURL forKey:@"url"];
         [dict setObject:@DEFAULTUSER forKey:@"user"];
+        
+        [dict setObject:@DEFAULTURL forKey:@"url2"];
+        [dict setObject:@DEFAULTUSER forKey:@"user2"];
+        
         [dict setObject:@DEFAULTPASS forKey:@"pass"];
         [dict setObject:@DEFAULTTHREADS forKey:@"threads"];
         [dict setObject:@"Default Config" forKey:@"name"];

@@ -143,7 +143,7 @@
             [self simpleAlert:@"You need to have at least one configuration."];
         }
         else{
-            UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"MobileMiner" message:@"Delete configuration?" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"BCN Miner" message:@"Delete configuration?" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"Delete" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *a){
                 [self deleteCurrentConfig];
             }];

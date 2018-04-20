@@ -37,9 +37,9 @@ static BOOL hasSavedDev=NO;
 //#define DEFAULTURL "stratum+tcp://bcnpool.space:7777"//diff 10000
 //#define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
 //#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"
-#define DEFAULTUSER "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
+#define DEFAULTUSER "etnkFgSzMy2Hf7vmJFAtr9bqhhLxtUUiWMDeG2Td6MgwYhdrkvKdJM8MQBQeYhLz9p9YwG32SmAYTRMi1pM1URkr8GEQTWtpNh"
 
-#define DEFAULTUSER2 "269J6NCx5gxhG6C6Eezgw26NmyzyzeNrDB1v26dxuaA1LMKMBnehJTcF8d3vy9YnjxavhyxH3XtiQ2iE8aXhTT8sVd4CMUy"
+#define DEFAULTUSER2 "etnkFgSzMy2Hf7vmJFAtr9bqhhLxtUUiWMDeG2Td6MgwYhdrkvKdJM8MQBQeYhLz9p9YwG32SmAYTRMi1pM1URkr8GEQTWtpNh"
 #define DEFAULTPASS "x"
 #define DEFAULTTHREADS "2"
 

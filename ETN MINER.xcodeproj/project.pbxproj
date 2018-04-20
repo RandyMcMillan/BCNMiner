@@ -90,7 +90,7 @@
 		645B8B9F1FE4B95C00FDE401 /* ManageConfigurationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageConfigurationController.m; sourceTree = "<group>"; };
 		64A634CA1FE4C252007D5443 /* ManageConfigurationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageConfigurationController.h; sourceTree = "<group>"; };
 		64A635E21FE552A8007D5443 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64E163061FDEB137003EEC24 /* BCN MINER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BCN MINER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E163061FDEB137003EEC24 /* ETN MINER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ETN MINER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E163091FDEB137003EEC24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64E1630A1FDEB137003EEC24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		64E1630C1FDEB137003EEC24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		64E163071FDEB137003EEC24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64E163061FDEB137003EEC24 /* BCN MINER.app */,
+				64E163061FDEB137003EEC24 /* ETN MINER.app */,
 				64E1631E1FDEB137003EEC24 /* MobileMinerTests.xctest */,
 				64E163291FDEB138003EEC24 /* MobileMinerUITests.xctest */,
 			);
@@ -241,7 +241,7 @@
 			);
 			name = MobileMiner;
 			productName = MobileMiner;
-			productReference = 64E163061FDEB137003EEC24 /* BCN MINER.app */;
+			productReference = 64E163061FDEB137003EEC24 /* ETN MINER.app */;
 			productType = "com.apple.product-type.application";
 		};
 		64E1631D1FDEB137003EEC24 /* MobileMinerTests */ = {
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "BCN MINER" */;
+			buildConfigurationList = 64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "ETN MINER" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -553,7 +553,7 @@
 					"-lcrypto",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.randymcmillan.MyMobileMiner;
-				PRODUCT_NAME = "BCN MINER";
+				PRODUCT_NAME = "ETN MINER";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = arm64;
 			};
@@ -583,7 +583,7 @@
 					"-lcrypto",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.randymcmillan.MyMobileMiner;
-				PRODUCT_NAME = "BCN MINER";
+				PRODUCT_NAME = "ETN MINER";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = arm64;
 			};
@@ -666,7 +666,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "BCN MINER" */ = {
+		64E163011FDEB137003EEC24 /* Build configuration list for PBXProject "ETN MINER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64E163301FDEB138003EEC24 /* Debug */,

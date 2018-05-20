@@ -31,9 +31,9 @@ static BOOL hasSavedDev=NO;
 //REF:https://democats.org
 //#define DEFAULTURL "stratum+tcp://bcn.pool.minergate.com:45620"
 //#define DEFAULTURL "stratum+tcp://bcnpool.space:3333"//diff 100
-#define DEFAULTURL "stratum+tcp://bcnpool.space:5555"//diff 2000
+#define DEFAULTURL "stratum+tcp://bytecoin.uk:3333"//diff 2000
 
-#define DEFAULTURL2 "stratum+tcp://bcnpool.space:3333"//diff 2000
+#define DEFAULTURL2 "stratum+tcp://bytecoin.uk:3333"//diff 2000
 //#define DEFAULTURL "stratum+tcp://bcnpool.space:7777"//diff 10000
 //#define DEFAULTURL "stratum+tcp://pool.democats.org:45500"
 //#define DEFAULTUSER "randy.lee.mcmillan@gmail.com"

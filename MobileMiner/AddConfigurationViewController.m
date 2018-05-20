@@ -191,7 +191,8 @@
         textFieldText=[config objectForKey:@"name"];
     }
     if (row==3){
-        placeholder=@"stratum+tcp://bcnpool.space:5555";
+        
+        placeholder=@"stratum+tcp://bytecoin.uk:3333";
         textFieldText=[config objectForKey:@"url"];
     }
     if (row==5){
